@@ -28,6 +28,7 @@ umaima-cv/
 │── index.html          # Main HTML file
 │── css/
 │   └── style.css       # Main stylesheet
+```
 
 ## 🎨 Features
 - **Header**: Profile photo, name, title, and social links.
@@ -44,3 +45,4 @@ umaima-cv/
 
 ## 📄 License
 This project is for educational purposes.
+
