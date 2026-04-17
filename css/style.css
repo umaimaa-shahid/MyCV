@@ -298,8 +298,9 @@ img {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     font-size: 1.1rem;
+    word-break: break-word; /* Prevents long emails from breaking mobile containers */
 }
 
 .contact-info i {
@@ -572,8 +573,26 @@ input:checked+.slider:before {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        padding: 30px 15px;
+        margin: 60px auto 40px auto; /* Push down so the fixed dark-mode toggle doesn't hide info */
+        max-width: 95%;
+    }
+
+    .header-container {
+        gap: 25px;
+    }
+
     .header-content h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    
+    .header-content h2 {
+        font-size: 1.1rem;
     }
 
     .contact-mini {
@@ -581,11 +600,68 @@ input:checked+.slider:before {
         gap: 10px;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 25px;
     }
 
     .skills-grid {
         justify-content: center;
+    }
+
+    .hero-actions {
+        flex-direction: row; /* Keep side by side if possible, or wrap */
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-item::before {
+        left: -29px; /* Adjust dot position according to padding */
+    }
+
+    /* Fix Contact Form Overflow on 320px */
+    .contact-container {
+        padding: 20px 15px;
+    }
+    
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+    
+    .contact-info i {
+        min-width: 20px; /* Prevent icon squishing */
+    }
+    
+    .container {
+        padding: 0 15px; /* Maximum horizontal space */
     }
 }
