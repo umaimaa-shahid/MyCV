@@ -1,9 +1,9 @@
-# Umaima CV
+# My CV
 
 A professional, responsive CV website built using pure HTML5 and CSS3.
 
 ## 🚀 Live Demo
-[Portfolio](my-cv-nine-xi.vercel.app)
+[Portfolio](https://my-cv-nine-xi.vercel.app/)
 
 ## 📋 Project Requirements
 This project was built to satisfy the following requirements:
