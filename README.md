@@ -3,7 +3,7 @@
 A professional, responsive CV website built using pure HTML5 and CSS3.
 
 ## 🚀 Live Demo
-[Live Link Here - To be added after deployment]
+[Portfolio](my-cv-nine-xi.vercel.app)
 
 ## 📋 Project Requirements
 This project was built to satisfy the following requirements:
