@@ -277,9 +277,9 @@ img {
 .tags span {
     background-color: rgba(108, 99, 255, 0.1);
     color: var(--primary-color);
-    padding: 5px 12px;
+    padding: 7px 15px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
 }
 
@@ -464,6 +464,85 @@ input:checked+.slider {
 
 input:checked+.slider:before {
     transform: translateX(24px);
+}
+
+/* Extra Additions for HR Refactor */
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.hero-actions .btn {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+    border: 2px solid var(--primary-color);
+}
+
+.hero-actions .btn.outline {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.hero-actions .btn.outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+[data-theme="dark"] .hero-actions .btn.outline {
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .hero-actions .btn.outline:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.project-links a:hover {
+    color: var(--secondary-color);
+}
+
+.project-links a i {
+    margin-right: 5px;
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h4 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.focus-list {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.focus-list li {
+    margin-bottom: 8px;
 }
 
 /* AnimationsKeyframes */

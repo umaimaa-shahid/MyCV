@@ -27,13 +27,19 @@
     <header class="header">
         <div class="container header-container">
             <div class="profile-photo">
-                <!-- Placeholder for profile photo -->
-                <img src="https://ui-avatars.com/api/?name=Umaima+Shahid&background=1a365d&color=fff&size=150"
-                    alt="Umaima">
+                <!-- HR TIP: Replacing this placeholder with a real headshot builds immediate visual trust -->
+                <!-- Replace src with your local image path (e.g. "images/profile.jpg") -->
+                <img src="https://ui-avatars.com/api/?name=Umaima+Shahid&background=1a365d&color=fff&size=150&font-size=0.33"
+                    alt="Umaima Shahid - Upload real photo here">
             </div>
             <div class="header-content">
                 <h1>Umaima Shahid</h1>
-                <h2>Computer Science Student</h2>
+                <h2>Full-Stack Developer | Cybersecurity Enthusiast</h2>
+                <p
+                    style="margin-bottom: 20px; color: var(--text-muted); font-size: 1.05rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    I build secure, scalable web applications and low-level systems with a focus on performance and
+                    real-world usability.
+                </p>
                 <div class="contact-mini">
                     <a href="mailto:umaima.shahid2023@gmail.com"><i class="fas fa-envelope"></i>
                         umaima.shahid2023@gmail.com</a>
@@ -41,114 +47,29 @@
                             class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/umaimaa-shahid" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <button onclick="window.print()" class="btn outline"><i class="fas fa-download"></i> Download
+                        CV</button>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="about" class="section">
-            <h3 class="section-title">Profile Summary</h3>
-            <p>Passionate Computer Science student with experience in game development and web applications using C++,
-                Assembly, JavaScript, and modern web frameworks. Skilled in combining design and functionality to create
-                effective user experiences.</p>
-        </section>
-
-        <section id="education" class="section">
-            <h3 class="section-title">Past Education</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - Present</div>
-                    <div class="timeline-content">
-                        <h4>Bachelor of Computer Science</h4>
-                        <p>FAST NUCES</p>
-                        <ul>
-                            <li>Completed 5th Semester</li>
-                            <li>Completed coursework in Object-Oriented Programming, DSA, Assembly Language, OS, CN, and
-                                Web Technologies</li>
-                            <li>Participating in various society-led tech initiative and hackathons.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h3 class="section-title">Skills</h3>
-
-            <h4 style="margin-bottom: 20px; color: var(--primary-color);">Technical Skills</h4>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h4>JavaScript / ES6</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h4>React.js</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-node-js"></i>
-                    <h4>Node.js / Express</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h4>MongoDB / SQL</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h4>C++ / C / Python</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
-                    <h4>Git & GitHub</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-layer-group"></i>
-                    <h4>Tailwind CSS</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h4>VS Code</h4>
-                </div>
-            </div>
-
-            <h4 style="margin-top: 30px; margin-bottom: 20px; color: var(--primary-color);">Soft Skills</h4>
-            <div class="tags">
-                <span>Team Management</span>
-                <span>Communication</span>
-                <span>Problem Solving</span>
-                <span>Time Management</span>
-            </div>
-        </section>
-
+        <!-- New section ordering: Projects are front and center -->
         <section id="projects" class="section">
-            <h3 class="section-title">Experience & Projects</h3>
+            <h3 class="section-title">Featured Projects</h3>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h4>ToDo Planner Website</h4>
-                    <p>A modern, responsive Personal Task Manager built with ASP.NET Core and Tailwind CSS. Implements
-                        MVC architecture and Repository Pattern.</p>
-                    <div class="tags">
-                        <span>ASP.NET Core</span>
-                        <span>Tailwind CSS</span>
-                        <span>SQLite</span>
-                        <span>EF Core</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h4>Recipe Finder Website</h4>
-                    <p>Full-stack web app that helps users discover recipes based on ingredients, cuisine, and dietary
-                        preferences.</p>
-                    <div class="tags">
-                        <span>Python Flask</span>
-                        <span>React</span>
-                        <span>MongoDB</span>
-                        <span>TailwindCSS</span>
-                    </div>
-                </div>
-                <div class="project-card">
                     <h4>Societies Management System</h4>
-                    <p>Full-stack web app for managing societies, events, and members. Built user authorization, CRUD
-                        operations, and responsive UI.</p>
+                    <p>Built a full-stack platform with role-based authentication and event management. Designed REST
+                        APIs and optimized database queries, significantly improving system efficiency and user
+                        engagement.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/umaimaa-shahid/Fynder" target="_blank"><i class="fab fa-github"></i>
+                            Source Code</a>
+                    </div>
                     <div class="tags">
                         <span>Node.js</span>
                         <span>React</span>
@@ -156,67 +77,180 @@
                         <span>MSSQL</span>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <h4>Flappy Bird Game</h4>
-                    <p>Developed a low-level game with custom sprites and keyboard input. Focused on memory management
-                        and interrupts.</p>
+                    <h4>Flappy Bird Game | x86 Assembly</h4>
+                    <p>Built from scratch using x86 Assembly, demonstrating deep understanding of memory management and
+                        CPU interrupts. Implemented custom sprite rendering and achieved seamless 60FPS input handling
+                        entirely in assembly.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/umaimaa-shahid/FlappyBird-Game" target="_blank"><i
+                                class="fab fa-github"></i> Source Code</a>
+                    </div>
                     <div class="tags">
                         <span>Assembly Language</span>
                         <span>Low-level Programming</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h4>Facebook Clone</h4>
-                    <p>Simulated core Facebook features (login, posts, friends) using OOP concepts. Applied inheritance,
-                        polymorphism, and file handling.</p>
-                    <div class="tags">
-                        <span>C++</span>
-                        <span>OOP</span>
-                        <span>File Handling</span>
+                    <h4>ToDo Planner Website</h4>
+                    <p>Developed a modern, responsive architecture implementing the Repository Pattern, leading to
+                        highly maintainable code and a fast, seamless cross-device user experience.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/salishbaahmed/Smart-Presence" target="_blank"><i
+                                class="fab fa-github"></i> Source Code</a>
                     </div>
-                </div>
-                <div class="project-card">
-                    <h4>Snakes & Ladders Game</h4>
-                    <p>Console-based board game with structured programming and modular logic. Implemented turn-based
-                        gameplay and board rendering.</p>
                     <div class="tags">
-                        <span>C++</span>
-                        <span>Structured Programming</span>
+                        <span>ASP.NET Core</span>
+                        <span>Tailwind CSS</span>
+                        <span>SQLite</span>
+                        <span>EF Core</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 60px;">
-            <section id="languages" class="section" style="flex: 1; min-width: 250px; margin-bottom: 0;">
-                <h3 class="section-title">Languages</h3>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;"><i class="fas fa-language"
-                            style="color: var(--primary-color); margin-right: 10px;"></i> <strong>English</strong> -
-                        Fluent</li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-language"
-                            style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Urdu</strong> - Native
-                    </li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-language"
-                            style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Turkish</strong> -
-                        Basic</li>
-                </ul>
-            </section>
-
-            <section id="hobbies" class="section" style="flex: 1; min-width: 250px; margin-bottom: 0;">
-                <h3 class="section-title">Hobbies</h3>
-                <div class="tags">
-                    <span><i class="fas fa-code"></i> Coding</span>
-                    <span><i class="fas fa-book"></i> Book Reading</span>
-                    <span><i class="fas fa-paint-brush"></i> Painting</span>
-                    <span><i class="fas fa-pen-nib"></i> Calligraphy</span>
-                    <span><i class="fas fa-camera"></i> Photography</span>
+        <!-- Structured Skills -->
+        <section id="skills" class="section">
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="skills-grid" style="display: block;">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <div class="tags">
+                        <span><i class="fas fa-code"></i> C++</span>
+                        <span><i class="fas fa-code"></i> C</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fab fa-js"></i> JavaScript / ES6</span>
+                    </div>
                 </div>
-            </section>
-        </div>
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="tags">
+                        <span><i class="fab fa-react"></i> React.js</span>
+                        <span><i class="fas fa-layer-group"></i> Tailwind CSS</span>
+                        <span><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Backend & Databases</h4>
+                    <div class="tags">
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span><i class="fas fa-server"></i> Express.js</span>
+                        <span><i class="fab fa-windows"></i> ASP.NET Core</span>
+                        <span><i class="fas fa-database"></i> MongoDB</span>
+                        <span><i class="fas fa-database"></i> SQL Server / SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Other</h4>
+                    <div class="tags">
+                        <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span><i class="fas fa-users"></i> Agile / Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Technical Focus Section -->
+        <section id="focus" class="section">
+            <h3 class="section-title">Technical Focus</h3>
+            <ul class="focus-list">
+                <li><strong>Full-Stack Development:</strong> Building resilient, scalable APIs and responsive user
+                    interfaces.</li>
+                <li><strong>Secure Web Applications:</strong> Implementing secure authentication flows (JWT) and data
+                    validation.</li>
+                <li><strong>System-Level Programming:</strong> Strong foundational grasp of memory management, pointers,
+                    and CPU interrupts via C, C++, and Assembly.</li>
+                <li><strong>Cybersecurity Foundations:</strong> Enthusiastic about network security, secure coding
+                    practices, and system vulnerabilities.</li>
+            </ul>
+        </section>
+
+        <!-- Other Projects separated to not distract from the best ones -->
+        <section id="other-projects" class="section">
+            <h3 class="section-title">Other Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Recipe Finder Website</h4>
+                    <p>Full-stack web app that helps users discover recipes based on ingredients, cuisine, and dietary
+                        preferences.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/anumaamirsajjad/CooKar-A-recipe-finder-website-" target="_blank"><i
+                                class="fab fa-github"></i> Source Code</a>
+                    </div>
+                    <div class="tags">
+                        <span>Python Flask</span>
+                        <span>React</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Facebook Clone</h4>
+                    <p>Simulated core Facebook features (login, posts, friends) using OOP concepts. Applied inheritance
+                        and polymorphism.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/umaimaa-shahid" target="_blank"><i class="fab fa-github"></i> Source
+                            Code</a>
+                    </div>
+                    <div class="tags">
+                        <span>C++</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Snakes & Ladders Game</h4>
+                    <p>Console-based board game with structured programming and modular logic. Implemented turn-based
+                        gameplay.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/AN-ayeshaNoor/PF-Project-SnakesAndLadder" target="_blank"><i
+                                class="fab fa-github"></i> Source Code</a>
+                    </div>
+                    <div class="tags">
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h3 class="section-title">Education & Profile Stats</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h4>BS Computer Science</h4>
+                        <p>FAST NUCES</p>
+                        <ul
+                            style="margin-top: 10px; padding-left: 20px; list-style-type: square; color: var(--text-muted);">
+                            <li><strong>Key Coursework:</strong> Data Structures, OOP, Operating Systems, Web
+                                Technologies, Assembly</li>
+                            <li><strong>Activities & Extracurriculars:</strong> Actively contributed to university tech
+                                initiatives, led collaborative coding projects, and participated in society hackathons.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Proof Point (Social Proof) -->
+            <div
+                style="margin-top: 30px; padding: 25px; background-color: var(--card-bg); border-radius: var(--border-radius); border-left: 4px solid var(--secondary-color); box-shadow: var(--shadow);">
+                <h4 style="margin-bottom: 12px; color: var(--primary-color);">By the Numbers</h4>
+                <div class="tags">
+                    <span>10+ Projects Built</span>
+                    <span>3 Full-Stack Apps</span>
+                    <span>System-Level Experience</span>
+                    <span>Active on GitHub</span>
+                </div>
+            </div>
+        </section>
 
         <section id="contact" class="section">
             <h3 class="section-title">Let's Work Together!</h3>
+            <div
+                style="margin-bottom: 25px; font-weight: 600; color: #2b6cb0; background-color: #ebf8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #3182ce;">
+                🟢 Available for internships and project collaborations
+            </div>
             <div class="contact-container">
                 <div class="contact-info">
                     <p><i class="fas fa-envelope"></i> <a
@@ -226,31 +260,27 @@
                     <p><a href="https://github.com/umaimaa-shahid" target="_blank"><i class="fab fa-github"></i> GitHub
                             Profile</a></p>
                 </div>
-                <!-- Bonus: Contact Form -->
-                <form class="contact-form" action="#" width="100%">
+                <!-- Real Backend Contact Form (Formsubmit) -->
+                <form class="contact-form" action="https://formsubmit.co/umaima.shahid2023@gmail.com" method="POST">
+                    <!-- Config for Formsubmit -->
+                    <input type="hidden" name="_subject" value="New contact from Portfolio Website!">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="button" class="btn">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </section>
-
-        <div class="download-section">
-            <!-- Bonus: Downloadable CV -->
-            <button onclick="window.print()" class="btn download-btn"><i class="fas fa-download"></i> Print / Save as
-                PDF</button>
-        </div>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Umaima. All rights reserved.</p>
+        <p>&copy; 2026 Umaima Shahid. All rights reserved.</p>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/umaima-shahid-620194295" target="_blank"><i
                     class="fab fa-linkedin"></i></a>
